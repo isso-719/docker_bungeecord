@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  bungeecord:
+    image: itzg/bungeecord:latest
+    volumes:
+    - ./src:/server
+    restart: always
+    ports:
+    - "25565:25577"
+    environment:
+      MEMORY: 256m
